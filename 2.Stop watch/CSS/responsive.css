@@ -1,0 +1,162 @@
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    .planet {
+        width: 500px;
+        height: 500px;
+        top: 30%;
+    }
+    
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .stopwatch {
+        gap: 15px;
+    }
+
+    .time-block {
+        width: calc(50% - 15px);
+    }
+
+    .digit-container {
+        min-width: 60px;
+    }
+
+    .digit {
+        font-size: 2rem;
+    }
+
+    .controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .control-btn {
+        min-width: 100px;
+    }
+
+    .planet {
+        width: 400px;
+        height: 400px;
+    }
+
+    .description {
+        max-width: 300px;
+        font-size: 0.8rem;
+        top: 30%;
+    }
+    .sign-up{
+        margin: 0;
+        margin-left: 1rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .sign-up {
+        padding: 8px 15px;
+    }
+
+    .stopwatch {
+        gap: 10px;
+    }
+
+    .time-block {
+        width: calc(50% - 10px);
+    }
+
+    .digit-container {
+        min-width: 50px;
+        padding: 8px;
+    }
+
+    .digit {
+        font-size: 1.8rem;
+    }
+
+    .label {
+        font-size: 0.6rem;
+    }
+
+    .control-btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .planet {
+        width: 300px;
+        height: 300px;
+    }
+
+    .description {
+        max-width: 250px;
+        font-size: 0.7rem;
+        margin-top: 30px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 320px) {
+    .stopwatch {
+        flex-direction: column;
+    }
+
+    .time-block {
+        width: 100%;
+    }
+
+    .controls {
+        gap: 10px;
+    }
+
+    .control-btn {
+        min-width: 80px;
+        font-size: 0.7rem;
+    }
+
+    .planet {
+        width: 100px;
+        height: 100px;
+    }
+}

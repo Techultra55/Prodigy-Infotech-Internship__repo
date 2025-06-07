@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.container {
+    width: 95%;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+/* Header and Navigation */
+
+header {
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    color: rgb(117, 109, 109);
+    font-weight: 500;
+    transition: color 0.4s ease;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+
+
+
+.sign-in-btn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+    background-color: #377be1;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 50px;
+    width: 100vw;
+    height: 100vh;
+    background: conic-gradient(from 90deg at 15% 50%, rgb(0, 0, 0) 0%, rgb(61, 104, 150) 30%, rgba(0, 0, 0, 1) 100%);
+}
+
+
+.hero-tag {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 8px 24px;
+    margin: 28px;
+    font-size: 16px;
+}
+
+.hero-title {
+    font-size: 70px;
+    font-weight: 650;
+    margin: 2rem 24px;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 800px;
+    margin: 5rem auto 32px;
+
+}
+
+.get-started-btn {
+    background-color: transparent;
+    color: white;
+    padding: 14px 32px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 600px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    margin-top: 15px;
+    opacity: 0.3;
+}
+
+.get-started-btn:hover {
+    background-color: #0b5ed7;
+    border: none;
+    opacity: 1;
+}
+
+/* Partners Section */
+
+.partners {
+    padding: 60px 0;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    font-weight: 600;
+}
+
+.partner:hover {
+    opacity: 1;
+}
+
+.partner-icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
